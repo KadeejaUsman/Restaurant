@@ -1,0 +1,212 @@
+<html>
+<title>Food Menu</title>
+<head>
+  <style>
+     /* navbar style */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    position:fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    height: 50px;
+    z-index: 12;
+    opacity: 0.85;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.navbar-container {
+    display:flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color:#444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    /* margin-bottom: 0.5rem; */
+}
+/* end of navbar */
+    * food menu */
+    #food-menu {
+        padding: 5rem 0;
+        background: #f5f5f5;
+    }
+
+    .food-menu-heading {
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: #117964;
+    }
+
+    .food-menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0px 30px 0px;
+    }
+
+    .food-menu-container img {
+        display: block;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .food-menu-item {
+        display: flex;
+        flex: 1 1 600px;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+    }
+
+    .food-description {
+        margin: auto 1.5rem;
+    }
+
+    .food-title {
+        font-size: 1.8rem;
+        color: #117964;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .food-description p {
+        font-size: 1.4rem;
+        color:#555;
+        font-weight: 600;
+    }
+    .food-description .food-price {
+        color:#119764;
+        font-weight: 700;
+    }
+/* food menu ends*/
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+        <div class="container navbar-container">
+            <input type="checkbox" name="" id="">
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <ul class="menu-items">
+               <!-- <li><a href="">Home</a></li>-->
+
+                <li><a href="about">About</a></li>
+                <li><a href="category">Category</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="review">Testimonials</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+
+            <h1 class="logo">Naira </h1>
+        </div>
+    </nav>
+
+
+<!-- food menu -->
+        <section id="food-menu">
+            <h2 class="food-menu-heading">Food Menu</h2>
+            <div class="food-menu-container container">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="static/images/img_20.png" alt="menu-1">
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Al-Faham</h2>
+                        <!--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
+                        <p class="food-price"> Price: &#8377;750 </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="static/images/img_19.png" alt="menu-2">
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Kuzhimandhi</h2>
+                        <!--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
+                        <p class="food-price"> Price: &#8377;850 </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="static/images/img_21.png" alt="menu-3">
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Alfaham Mandhi</h2>
+
+                        <p class="food-price"> Price: &#8377;900 </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="static/images/img_22.png" alt="menu-4">
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Chicken Biriyani</h2>
+
+                        <p class="food-price"> Price: &#8377;140 </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="static/images/img_23.png" alt="menu-5">
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Beaf Biriyani</h2>
+
+                        <p class="food-price"> Price: &#8377;120 </p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="static/images/img_24.png" alt="menu-6">
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Mutton Biriyani</h2>
+
+                        <p class="food-price"> Price: &#8377;350 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
+    <!-- food menu ends -->

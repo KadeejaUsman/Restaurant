@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+        .food-menu-heading {
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: #117964;
+    }
+         /* navbar style */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    position:fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    height: 50px;
+    z-index: 12;
+    opacity: 0.85;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.navbar-container {
+    display:flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color:#444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    /* margin-bottom: 0.5rem; */
+}
+/* end of navbar */
+        #about {
+    background: #f5f5f5;
+
+    padding: 50px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    font-size: 2.3rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards ;
+}
+
+@keyframes about-img-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin:auto;
+    transform: translate(-150px);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+    </style>
+</head>
+<body >
+<nav class="navbar">
+        <div class="container navbar-container">
+            <input type="checkbox" name="" id="">
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <ul class="menu-items">
+                <!--<li><a href="home">Home</a></li>-->
+                <li><a href="about">About</a></li>
+                <li><a href="category">Category</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="review">Testimonials</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+
+            <h1 class="logo">Naira </h1>
+        </div>
+    </nav>
+<!-- about section -->
+        <section >
+            <h2 class="food-menu-heading">About Us</h2>
+            <div class="about-wrapper container">
+                <div class="about-text">
+                    <p class="small">About Us</p>
+                    <h2>We've been making healthy food last for 10 years.</h2>
+                    <p>Naira Food Circle opened in 2014 with an inventive Indian menu that serves Indian food for the twenty first century with a unique marriage of global ingredients and techniques with the flavours and traditions of Kochi and has become Kochi's most celebrated restaurant. Naira Food Circle is just 5 km from the cosmopolitan city centre of Cochin. It houses 5 dining options, an outdoor pool and a gym. Wi-Fi is accessible throughout the hotel.The restaurant’s path-breaking contemporary Indian menu has been designed by Chef Koya. His creativity is showcased by the unique amalgamation of the freshest local produce combining home style nostalgic tastes with unusual ingredients from across the world. Chef Manish has won several awards including Best Chef in India by American Express.
+Naira Food Circle has a second outpost in Oberon Mall and a third one opening shortly at lulu Mall,Kochi.</p>
+                </div>
+                <div class="about-img">
+                    <br><br><br><br>
+                    <img src="static/images/img_5.png" alt="food">
+                </div>
+            </div>
+        </section>
+
+</body>
+</html>

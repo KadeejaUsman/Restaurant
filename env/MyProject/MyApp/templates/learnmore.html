@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn More..</title>
+    <style>
+         #about {
+    background: #f5f5f5;
+
+    padding: 50px 0;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about h2 {
+    font-size: 2.3rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.about-img {
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards ;
+}
+
+@keyframes about-img-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin:auto;
+    transform: translate(-150px);
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+    </style>
+</head>
+<body>
+ <section id="fruits" >
+
+            <div class="about-wrapper container">
+                <div class="about-text">
+
+                    <h2>Fruits</h2>
+                    <p>What are the health advantages of juice drinking? Without needing to first break down the fibers and other components found in whole foods, juice enables your body to absorb nutrients fast. Juice consumption increases the absorption of vitamins and minerals.</p>
+                    <h3><a href="category">Back</a></h3>
+                </div>
+                <div class="about-img">
+                    <br><br><br><br>
+                    <img src="static/images/img_11.png" alt="food">
+                </div>
+            </div>
+        </section>
+</body>
+</html>

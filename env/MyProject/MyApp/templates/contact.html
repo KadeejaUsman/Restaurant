@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <style>
+        /* navbar style */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar {
+    position:fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    height: 50px;
+    z-index: 12;
+    opacity: 0.85;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+
+.navbar-container {
+    display:flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color:#444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+    color: #117964;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    /* margin-bottom: 0.5rem; */
+}
+/* end of navbar */
+        /* contact form */
+#contact {
+    background-color: #f5f5f5;
+    padding: 5rem 0;
+}
+
+.contact-container {
+    display:flex;
+}
+
+.contact-img {
+    width: 50%;
+}
+
+.contact-img img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+    display: block;
+    width: 100%;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color:#117964;
+    font-weight: 600;
+}
+
+
+.form-container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #117964;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: -1.2rem;
+}
+/* contact form ends */
+
+    </style>
+</head>
+<body>
+<nav class="navbar">
+        <div class="container navbar-container">
+            <input type="checkbox" name="" id="">
+
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+
+            <ul class="menu-items">
+               <!-- <li><a href="home.html">Home</a></li>-->
+
+                <li><a href="about">About</a></li>
+                <li><a href="category">Category</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="review">Testimonials</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+
+            <h1 class="logo">Naira </h1>
+        </div>
+    </nav>
+
+<!-- contact section -->
+        <section id="contact">
+
+            <div class="contact-container container">
+                <div class="contact-img">
+                    <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="contact img">
+                </div>
+                <form class="form-container">
+                    <h2>Contact Us</h2>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="your mail-id" required>
+                    <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Type your message" required></textarea>
+                    <input type="button" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </section>
+</body>
+</html>
